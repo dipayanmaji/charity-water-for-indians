@@ -1,0 +1,33 @@
+.header2-container{
+    box-sizing: border-box;
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(255, 255, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.header2{
+    width: 70rem;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(7, 10rem);
+    font-family: calibri;
+    text-transform: uppercase;
+}
+.header2 a{
+    text-decoration: inherit;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header2 .active{
+    text-decoration: underline;
+    color: #808080;
+}
+
+.header2 .logo2{
+    width: 6rem;
+}

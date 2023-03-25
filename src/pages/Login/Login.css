@@ -1,0 +1,37 @@
+.login-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    width: 100%;
+    padding-top: 1rem;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(250, 240, 215));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login form{
+    width: 50%;
+    padding: 2.5%;
+    background-color: rgba(0, 0, 0, 0.267);
+    text-transform: uppercase;
+}
+.login form .submit-btn{
+    display: flex;
+    justify-content: center;
+}
+.login form button{
+    width: 50%;
+    transition: 200ms;
+    text-transform: uppercase;
+    border: none;
+}
+.login form button:hover{
+    transform: scale(1.025);
+}
+.login form button:active{
+    transform: scale(0.98);
+}

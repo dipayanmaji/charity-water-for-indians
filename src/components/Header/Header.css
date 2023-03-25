@@ -1,0 +1,39 @@
+.header-container{
+    box-sizing: border-box;
+    height: 4rem;
+    width: 100vw;
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.header{
+    width: 70rem;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(7, 10rem);
+    font-family: calibri;
+    text-transform: uppercase;
+}
+.header div{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header div a{
+    /* background-color: green; */
+    text-decoration: none;
+    color: black;
+}
+.header div .active{
+    text-decoration: underline;
+    color: #808080;
+}
+
+.header .logo{
+    width: 7rem;
+}

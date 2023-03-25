@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import Header from './components/Header/Header';
+import Header2 from './components/Header2/Header2';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import Footer from './components/Footer/Footer';
 
 function App() {
+  const [fixedHeader, setFixedHeader] = useState(false);
+  window.addEventListener('scroll', ()=>{
+    console.log(window.pageYOffset);
+    if(window.pageYOffset>80){
+      setFixedHeader(true);
+    }else{
+      setFixedHeader(false);
+    }
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {
+        fixedHeader ? <Header2 /> : <Header />
+      }
+      <div className="App">
+        <div className='routes'>
+          <Routes>
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+          </Routes>
+        </div>
+      </div>
+      <Footer />
+    </>
+  )
 }
 
 export default App;
