@@ -1,0 +1,70 @@
+.register-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register-container .register{
+    width: 100%;
+    padding-top: 10rem;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(160, 189, 221));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register-container .register form{
+    width: 70%;
+    padding: 2.5%;
+    background-color: rgba(0, 0, 0, 0.267);
+    text-transform: uppercase;
+    transition: 1000ms;
+}
+.register-container .register .nonactive-form{
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.register-container .register .name-input{
+    display: flex;
+    gap: 5px;
+}
+.register-container .register form .submit-btn{
+    display: flex;
+    justify-content: center;
+}
+.register-container .register form button{
+    width: 50%;
+    transition: 200ms;
+    text-transform: uppercase;
+    border: none;
+}
+.register-container .register form button:hover{
+    transform: scale(1.025);
+}
+.register-container .register form button:active{
+    transform: scale(0.98);
+}
+
+.register-container .register .login{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.336);
+    box-shadow: 0px 0px 2px black;
+    transition: 1000ms;
+}
+.register-container .register .nonactive-login{
+    opacity: 0;
+    transform: translate(0, 10rem);
+}
+
+.register-container .register .login:hover{
+    background-color: rgba(0, 0, 0, 0.527);
+    box-shadow: none;
+}

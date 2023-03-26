@@ -1,0 +1,83 @@
+.contact-us-top-gap{
+    width: 100vw;
+    height: 10rem;
+    background-image: linear-gradient(to right,white 20%, rgb(234, 239, 243));
+}
+.contact-us-container{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 138vh;
+    background-image: url('../../images/children-playing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.contact-us{
+    width: 70rem;
+    position: relative;
+}
+.contact-us div{
+    height: 220px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1500ms;
+}
+.contact-us div:nth-child(1){
+    background-color: rgba(235, 139, 235, 0.2);
+    color: #3f3f3f;
+}
+.contact-us div:nth-child(1):hover{
+    background-color: rgba(90, 24, 90, 0.3);
+    color: black
+}
+.contact-us div:nth-child(2){
+    background-color: rgba(97, 125, 228, 0.2);
+    color: #4f4f4f;
+    position: absolute;
+    left: 42%;
+    top: 8rem;
+}
+.contact-us div:nth-child(2):hover{
+    background-color: rgba(0, 38, 175, 0.3);
+    color: black;
+}
+.contact-us div:nth-child(3){
+    background-color:  rgba(122, 235, 147, 0.2);
+    color: #3f3f3f;
+    position: absolute;
+    right: 0;
+    top: 20rem;
+}
+.contact-us div:nth-child(3):hover{
+    background-color:  rgba(8, 165, 42, 0.3);
+    color: black;
+}
+
+.contact-us-container .social-media{
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    padding: 0.5rem 10rem;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.contact-us-container .social-media svg{
+    cursor: pointer;
+    transition: 250ms;
+}
+.contact-us-container .social-media svg:hover{
+    color: rgb(96, 107, 255);
+}

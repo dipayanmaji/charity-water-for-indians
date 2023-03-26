@@ -2,9 +2,9 @@ body{
     margin: 0;
 }
 .App{
-    padding-top: 10rem;
-    background-color: white
+    /* padding-top: 10rem; */
+    /* background-color: white */
 }
 #root{
-    background-color: rgb(255, 255, 168);
+    /* background-color: rgb(255, 255, 168); */
 }
