@@ -3,6 +3,7 @@
     height: 3rem;
     width: 100%;
     background-color: rgb(255, 255, 168);
+    box-shadow: 0 0 10px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,10 +16,10 @@
     transform: translate(0, -6rem);
 }
 .header2-container .header2{
-    width: 70rem;
+    width: 80rem;
     /* background-color: red; */
     display: grid;
-    grid-template-columns: repeat(7, 10rem);
+    grid-template-columns: repeat(8, 10rem);
     font-family: calibri;
     text-transform: uppercase;
 }
@@ -28,6 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 .header2-container .header2 .active{
     text-decoration: underline;

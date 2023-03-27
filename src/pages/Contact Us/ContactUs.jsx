@@ -12,7 +12,6 @@ import {FaYoutube} from 'react-icons/fa';
 import {BsLinkedin} from 'react-icons/bs';
 
 const ContactUs= ()=>{
-    window.addEventListener('scroll', ()=>{console.log(window.pageYOffset)})
     const [active, setActive] = useState(false);
     useEffect(()=>{
         setActive(true);

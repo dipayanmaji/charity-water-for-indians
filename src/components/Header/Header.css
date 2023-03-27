@@ -3,7 +3,8 @@
     height: 4rem;
     width: 100vw;
     margin-top: 2rem;
-    background-color: rgb(255, 255, 168);
+    background-color: #95965b;
+    box-shadow: 0 1px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,7 @@
     width: 70rem;
     /* background-color: red; */
     display: grid;
-    grid-template-columns: repeat(7, 10rem);
+    grid-template-columns: repeat(8, 8.75rem);
     font-family: calibri;
     text-transform: uppercase;
 }
@@ -28,11 +29,12 @@
 .header div a{
     /* background-color: green; */
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 .header div .active{
     text-decoration: underline;
-    color: #808080;
+    color: rgb(226, 226, 226);
 }
 
 .header .logo{

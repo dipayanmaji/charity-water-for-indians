@@ -1,13 +1,7 @@
-/* .donate-top-gap{
-    width: 100vw;
-    height: 4.7rem;
-    background-color: rgb(160, 148, 132);
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(160, 148, 132) 20%);
-} */
 .donate-container{
     box-sizing: border-box;
     width: 100vw;
-    height: 142vh;
+    height: 58.3rem;
     padding-top: 10rem;
     background-image: url('../../images/boy-finding-water.jpg');
     background-repeat: no-repeat;
@@ -17,80 +11,18 @@
     align-items: center;
 }
 .donate-container .donate{
-    width: 80rem;
+    width: 70rem;
+    height: 48.3rem;
     /* background-color: red; */
-}
-
-.payment-method{
-    box-sizing: border-box;
-    background-color: rgba(51, 51, 51, 0.582);
-    height: 28rem;
-    width: 25rem;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    font-family: calibri;
-    font-size: 18px;
-    padding: 1rem;
-    border-radius: 3px;
-    color: rgb(241, 234, 134);
-    transition: 1000ms;
-}
-.payment-nonactive{
-    transform: scale(0.5) rotateY(90deg);
-}
-.payment-method .name-div{
     display: flex;
-    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.payment-method .name-div input{
-    width: 11.25rem;
-}
-.payment-method div input{
-    height: 2rem;
-    width: 23rem;
-    padding: 0 1rem;
-    margin-top: 5px;
-    outline: none;
-    border: none;
-    box-shadow: 0 1px 7px 0 rgba(0,0,0,.2);
-    font-size: 15px;
-    text-transform: uppercase;
-    border-radius: 3px;
-}
-.payment-method div input:hover{
-    background-color: #eaf5ff;
-}
-.payment-method div input:focus{
-    border: 2px solid #d9edff;
-}
-.payment-method .btn-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.payment-method #pay{
-    width: 7rem;
-    height: 2.5rem;
-    padding: 10px;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    background: linear-gradient(93deg,#53b2fe,#065af3);
-    box-shadow: 0 1px 7px 0 rgba(0,0,0,.2);
-    text-transform: uppercase;
-    font-family: Calibri;
-    font-size: 30px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 250ms;
-}
-.payment-method #pay:hover{
-    transform: scale(1.05);
-}
-.payment-method #pay:active{
-    transform: scale(1);
+.donate-container .donate .note{
+    /* width: 70rem; */
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.623);
+    color: yellow;
+    text-shadow: 0px 0px 5px black;
 }

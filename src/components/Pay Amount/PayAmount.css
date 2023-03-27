@@ -1,0 +1,113 @@
+.pay-amount{
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.582);
+    /* height: 28rem; */
+    width: 25rem;
+    /* display: grid;
+    grid-template-rows: repeat(5, 1fr); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: calibri;
+    font-size: 18px;
+    padding: 2rem 1rem;
+    border-radius: 3px;
+    color: rgb(71, 68, 0);
+    transition: 1000ms;
+    /* text-align: center; */
+}
+.pay-amount-nonactive{
+    transform: scale(0.5) rotateY(90deg);
+}
+.pay-amount h2{
+    text-align: center;
+}
+
+.pay-amount .choosable-amount{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.pay-amount .choosable-amount input{
+    height: 2rem;
+    width: 7rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(192, 218, 46, 0.2);
+    background-color: rgb(0, 72, 85);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 250ms;
+}
+.pay-amount .choosable-amount input:hover{
+    background-color: rgb(0, 42, 49);
+}
+.pay-amount .choosable-amount .focus{
+    background-color: rgb(0, 42, 49);
+    border: 2px rgb(173, 159, 0) solid;
+}
+
+.pay-amount .enter-amount{
+    transition: 1000ms;
+}
+.pay-amount .enter-amount input{
+    height: 2rem;
+    width: 20rem;
+    padding: 0 1rem;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,.2);
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.pay-amount .enter-amount input:hover{
+    background-color: #eaf5ff;
+}
+.pay-amount .enter-amount input:focus{
+    border: 2px solid #d9edff;
+}
+
+.pay-amount #donate{
+    width: 6rem;
+    height: 2rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background: linear-gradient(93deg,#53b2fe,#065af3);
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,.2);
+    text-transform: uppercase;
+    font-family: Calibri;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 250ms;
+}
+.pay-amount #donate:hover{
+    transform: scale(1.1);
+}
+.pay-amount #donate:active{
+    transform: scale(1);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}

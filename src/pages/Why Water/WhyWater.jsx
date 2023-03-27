@@ -4,7 +4,7 @@ import React from 'react';
 const WhyWater= ()=>{
     return(
         <div>
-            WhyWater.css
+            WhyWater
         </div>
     )
 }

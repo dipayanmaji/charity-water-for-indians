@@ -12,20 +12,20 @@ const Login =()=>{
     return(
         <div className='login-container'>
             <div className='login'>
-                <form onSubmit={(e)=> e.preventDefault()} className= {nonactive && 'nonactive-form'}>
+                <form onSubmit={(e)=> e.preventDefault()} className= {nonactive ? 'nonactive-form' : ''}>
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label">Email</label>
-                        <input type="email" className="form-control" id="email" placeholder='Email' />
+                        <input autoComplete='off' type="email" className="form-control" id="email" placeholder='Email' required />
                     </div>
 
                     <label htmlFor="password" className="form-label">Password</label>
-                    <input type="password" id="password" className="form-control" placeholder='Password' />
+                    <input autoComplete='off' type="password" id="password" className="form-control" placeholder='Password' required />
                     <br />
                     <div className='submit-btn'>
                         <button type="submit" className="btn btn-primary">Sign In</button>
                     </div>
                 </form>
-                <Link className={`register ${nonactive && 'nonactive-register'}`} to={'/register'}>Have Not Account? Register</Link>
+                <Link className={`register ${nonactive ? 'nonactive-register' : ''}`} to={'/register'}>Have Not Account? Register</Link>
             </div>
             <img src={image} alt="" style={{width: '100%'}} />
         </div>
