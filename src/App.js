@@ -14,10 +14,11 @@ import WhyWater from './pages/Why Water/WhyWater';
 import Donate from './pages/Donate/Donate';
 import Events from './pages/Events/Events';
 import NotFound from './pages/Not Found/NotFound';
+import ContextProvider from './components/Context/Context';
 
 function App() {
   return (
-    <>
+    <ContextProvider>
       <Header />
       <Header2 />
       <div className="App">
@@ -37,7 +38,7 @@ function App() {
         </div>
       </div>
       <Footer />
-    </>
+    </ContextProvider>
   )
 }
 
