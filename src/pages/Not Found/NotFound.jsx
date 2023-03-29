@@ -20,7 +20,7 @@ const NotFound= ()=>{
                 <section className='bottom-section'>
                     <h1>UH OH. WE CAN'T FIND THE PAGE YOU'RE LOOKING FOR.</h1>
                     <p>Please double check the spelling of your URL, and if you're still having problems, please visit our <a href="#">help center</a>.</p>
-                    <p>To learn more about charity water for indians and the water crisis, visit our <Link to={'/our-work'}>Why Water</Link> page.</p>
+                    <p>To learn more about charity water for indians and the water crisis, visit our <Link to={'/why-water'}>Why Water</Link> page.</p>
                 </section>
             </div>
         </div>

@@ -20,6 +20,19 @@
     letter-spacing: 5px;
     transition: 1s;
 }
+.events-container .nonactive-heading{
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.events-container .upcoming-event{
+    height: 18rem;
+    background: #f9dddd;
+    width: 70rem;
+    margin-top: 1rem;
+    border-radius: 15px
+}
+
 .events-container .events{
     width: 70rem;
     margin-top: 10px;
@@ -27,11 +40,6 @@
     flex-wrap: wrap;
     justify-content: center;
     transition: 1s;
-}
-
-.events-container .nonactive-heading{
-    opacity: 0;
-    transform: scale(0.5);
 }
 .events-container .nonactive-events{
     opacity: 0;

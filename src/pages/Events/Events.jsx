@@ -85,6 +85,11 @@ const Events= ()=>{
     return(
         <div className={`events-container`}>
             <h1 className={`heading ${nonactive ? 'nonactive-heading' : ''}`}>Our Events</h1>
+
+            <div className='upcoming-event'>
+                <h1>THE HEALTHIER</h1>
+            </div>
+
             <div className={`events ${nonactive ? 'nonactive-events' : ''}`}>
                 {
                     eventsList.map((event)=>(
