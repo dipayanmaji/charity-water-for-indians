@@ -15,9 +15,20 @@
     align-items: center;
     position: relative;
 }
+.contact-us-container .heading{
+    text-transform: uppercase;
+    font-family: calibri;
+    letter-spacing: 2px;
+    transition: 1500ms;
+}
+.contact-us-container .nonactive-heading{
+    opacity: 0;
+    transform: scale(0.2);
+}
 .contact-us{
     width: 70rem;
     position: relative;
+    font-weight: 600;
 }
 .contact-us div{
     height: 220px;

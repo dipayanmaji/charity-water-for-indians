@@ -40,3 +40,30 @@
 .header .logo{
     width: 7rem;
 }
+.header .user-profile{
+    position: relative;
+}
+.header .user-profile .user-name{
+    width: 100%;
+    font-weight: bold;
+    transition: 500ms;
+    min-width: 5.2rem;
+    max-width: 8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.header .user-profile .arrow{
+    margin-left: 5px;
+    font-weight: bold;
+}
+.header .user-profile .rotate{
+    transform: rotate(90deg);
+}
+.header .user-profile .log-out-btn{
+    min-width: 5.2rem;
+    width: 100%;
+    font-weight: bold;
+    position: absolute;
+    top: 2.4rem;
+}

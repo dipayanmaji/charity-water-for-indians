@@ -21,6 +21,7 @@ const ContactUs= ()=>{
         <div>
             <div className='contact-us-top-gap'></div>
             <div className='contact-us-container'>
+                <h1 className={`heading ${active ? '' : 'nonactive-heading'}`}>Contact Us</h1>
                 <div className='contact-us'>
                     <div style={{opacity: `${active? 1 : 0}`, transform: `translate(${active? 0 : -15}rem) scale(${active? 1 : 0.5})`}}>
                         <GiRotaryPhone style={{fontSize: '6rem'}} />

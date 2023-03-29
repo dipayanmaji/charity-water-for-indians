@@ -2,7 +2,7 @@
     box-sizing: border-box;
     height: 3rem;
     width: 100%;
-    background-color: rgb(255, 255, 168);
+    background-color: #95965b;
     box-shadow: 0 0 10px black;
     display: flex;
     justify-content: center;
@@ -23,19 +23,80 @@
     font-family: calibri;
     text-transform: uppercase;
 }
-.header2-container .header2 a{
-    text-decoration: inherit;
-    color: black;
+.header2-container .header2 div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.header2-container .header2 a{
+    text-decoration: inherit;
+    color: white;
+    /* text-shadow: 0px 0px 5px black; */
     font-weight: bold;
 }
 .header2-container .header2 .active{
     text-decoration: underline;
-    color: #808080;
+    color: rgb(240, 240, 240);
+    text-shadow: none;
 }
 
+/* .header2-container .header2 .logo2{
+    width: 2rem;
+    color: red;
+} */
+
 .header2-container .header2 .logo2{
-    width: 6rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+.header2-container .header2 .logo2 .water-drop{
+    position: absolute;
+    left: -21px;
+    top: 14px;
+    font-size: 21px;
+}
+.header2-container .header2 .logo2 .short-title{
+    font-size: 2rem;
+}
+.header2-container .header2 .logo2 .long-title{
+    font-size: 10px;
+    font-weight: lighter;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+}
+
+/* sign in - sign out button */
+.header2 .user-profile2{
+    position: relative;
+}
+.header2 .user-profile2 .user-name2{
+    width: 100%;
+    font-weight: bold;
+    transition: 500ms;
+    min-width: 5.2rem;
+    max-width: 8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.header2 .user-profile2 .arrow2{
+    margin-left: 5px;
+    font-weight: bold;
+}
+.header2 .user-profile2 .rotate2{
+    transform: rotate(90deg);
+}
+.header2 .user-profile2 .log-out-btn2{
+    min-width: 5.2rem;
+    width: 100%;
+    font-weight: bold;
+    position: absolute;
+    top: 2.4rem;
 }
