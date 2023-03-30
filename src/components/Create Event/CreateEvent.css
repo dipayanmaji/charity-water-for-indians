@@ -13,7 +13,7 @@ figure.event {
   background: #000000;
   text-align: center;
   border: 5px #7f558b solid;
-  transition: 300ms;
+  transition: 800ms;
 }
 figure.event * {
   -webkit-box-sizing: border-box;

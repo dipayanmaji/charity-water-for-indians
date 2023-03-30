@@ -26,11 +26,93 @@
 }
 
 .events-container .upcoming-event{
+    box-sizing: border-box;
     height: 18rem;
-    background: #f9dddd;
+    background-image: linear-gradient(to right bottom,#f33cb5, #5d5bef);
     width: 70rem;
     margin-top: 1rem;
-    border-radius: 15px
+    border-radius: 15px;
+    transition: 1s;
+    color: white;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 8px;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.events-container .upcoming-event:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 12px black;
+}
+.events-container .nonactive-upcoming-events{
+    opacity: 0;
+    transform: scale(0.3) rotateX(80deg);
+}
+
+.events-container .upcoming-event .upcoming-heading{
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+.events-container .upcoming-event .upcoming-heading h2{
+    margin: 0;
+    transition: 800ms;
+}
+
+.events-container .upcoming-event #image1{
+    width: 265px;
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px #000000;
+}
+.events-container .upcoming-event #image2{
+    width: 256px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px black;
+    position: absolute;
+    left: 36%;
+    top: 31%;
+}
+.events-container .upcoming-event #image3{
+    width: 325px;
+    border-radius: 15px;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    box-shadow: -3px 4px 7px #000000;
+}
+.events-container .upcoming-event .timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 38%;
+    left: 58%;
+    white-space: nowrap;
+}
+
+.events-container .upcoming-event .timer #hours{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+.events-container .upcoming-event .timer #minutes{
+    position: absolute;
+    top: 60px;
+    left: 48px;
+}
+.events-container .upcoming-event .timer #seconds{
+    position: absolute;
+    top: 100px;
+    left: 78px;
+}
+.events-container .upcoming-event .timer span{
+    color: aqua;
 }
 
 .events-container .events{
