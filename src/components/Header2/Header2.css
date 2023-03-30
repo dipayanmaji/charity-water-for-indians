@@ -1,7 +1,8 @@
 .header2-container{
     box-sizing: border-box;
     height: 3rem;
-    width: 100%;
+    width: 100vw;
+    min-width: max-content;
     background-color: #95965b;
     box-shadow: 0 0 10px black;
     display: flex;

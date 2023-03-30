@@ -1,11 +1,13 @@
 .contact-us-top-gap{
     width: 100vw;
+    min-width: max-content;
     height: 10rem;
     background-image: linear-gradient(to right,white 20%, rgb(234, 239, 243));
 }
 .contact-us-container{
     box-sizing: border-box;
     width: 100vw;
+    min-width: max-content;
     height: 56.7rem;
     background-image: url('../../images/children-playing.jpg');
     background-repeat: no-repeat;
@@ -76,6 +78,7 @@
     margin-bottom: 1rem;
     padding: 0.5rem 10rem;
     width: 100vw;
+    min-width: max-content;
     background-color: rgba(0, 0, 0, 0.466);
     color: rgb(255, 255, 255);
     display: flex;

@@ -1,5 +1,6 @@
 .not-found-container{
     width: 100vw;
+    min-width: max-content;
     min-height: 40rem;
     display: flex;
     flex-direction: column;

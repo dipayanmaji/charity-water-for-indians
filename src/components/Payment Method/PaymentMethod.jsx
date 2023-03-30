@@ -79,7 +79,7 @@ const PaymentMethod=({setActivePayAmount, amount})=>{
             </div>
             <div>
                 <label htmlFor='cvv'>CVV*</label> <br />
-                <input autoComplete='off' id='cvv' name='cvv' onChange={numInputHandler} value={state.cvv} type="text" minLength={3} maxLength={3} placeholder='CVV' required />
+                <input autoComplete='off' id='cvv' name='cvv' onChange={numInputHandler} value={state.cvv} type="password" minLength={3} maxLength={3} placeholder='CVV' required />
             </div>
             <div className='pay-btn-div'>
                 <button type='submit' id='pay'><strong>Pay {amount}</strong></button>
