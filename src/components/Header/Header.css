@@ -1,24 +1,27 @@
 .header-container{
     box-sizing: border-box;
     height: 4rem;
-    width: 100vw;
+    color: rgb(24, 124, 212);
+    font-weight: bolder;
     margin-top: 2rem;
-    background-color: #95965b;
-    box-shadow: 0 1px 5px black;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
     z-index: 2;
+   
 }
 .header{
     width: 70rem;
     /* background-color: red; */
+    color: aliceblue;
     display: grid;
-    grid-template-columns: repeat(8, 8.75rem);
-    font-family: calibri;
+    grid-template-columns: repeat(8, 9rem);
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
+    margin-left: 40%;
 }
 .header div{
     /* background-color: blue; */
@@ -29,41 +32,14 @@
 .header div a{
     /* background-color: green; */
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: rgb(58, 54, 250);
 }
 .header div .active{
     text-decoration: underline;
-    color: rgb(226, 226, 226);
+    color: #e0da9c;
 }
 
 .header .logo{
     width: 7rem;
-}
-.header .user-profile{
-    position: relative;
-}
-.header .user-profile .user-name{
-    width: 100%;
-    font-weight: bold;
-    transition: 500ms;
-    min-width: 5.2rem;
-    max-width: 8rem;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis
-}
-.header .user-profile .arrow{
-    margin-left: 5px;
-    font-weight: bold;
-}
-.header .user-profile .rotate{
-    transform: rotate(90deg);
-}
-.header .user-profile .log-out-btn{
-    min-width: 5.2rem;
-    width: 100%;
-    font-weight: bold;
-    position: absolute;
-    top: 2.4rem;
+    margin-left:-120% ;
 }
