@@ -1,12 +1,12 @@
-.hero{
-  width:100%;
-  height:70vh;
-  position:relative;
+.hero {
+  width: 100%;
+  height: 70vh;
+  position: relative;
 }
 
-img{
-  width:100%;
-  height:100%;
+.hero img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -28,23 +28,23 @@ img{
   margin-bottom: 1rem;
 }
 
-.hero-text p{
+.hero-text p {
   font-size: 2.2rem;
   padding: 0.5rem 0 2rem 0;
   color: #42d78a;
-  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
-  }
-  
-  .hero-text .show{
-  text-decoration:none;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text .show {
+  text-decoration: none;
   background: rgb(52, 210, 197);
   padding: 1rem 2rem;
   border-radius: 6px;
-  font-size:1.1rem;
-  font-weight:bold;
+  font-size: 1.1rem;
+  font-weight: bold;
   letter-spacing: 2px;
-  color:#222;
-  }
+  color: #222;
+}
 
 .hero-text .show {
   text-decoration: none;
@@ -59,18 +59,20 @@ img{
 }
 
 
-@media screen and(max-width:555px){
-  .hero-text h1{
+@media screen and(max-width:555px) {
+  .hero-text h1 {
     padding: 10px 20px;
   }
-  .hero-text p{
+
+  .hero-text p {
     font-size: 1.1rem;
     padding: 0 0 2rem 0;
   }
-  .hero-text .show{
+
+  .hero-text .show {
     padding: 0.6rem 1.1rem;
     border-radius: 6px;
-    font-size:1rem;
+    font-size: 1rem;
   }
 }
 
@@ -79,7 +81,7 @@ img{
   padding: 70px 0;
 }
 
-.row {
+.section-white .container .row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,17 +96,17 @@ img{
 }
 
 
-.col-sm-6 {
+.row .col-sm-6 {
   flex: 1 0 50%;
   max-width: 50%;
 }
 
-.col-md-4 {
+.row .col-md-4 {
   flex: 1 0 33.333333%;
   max-width: 33.333333%;
 }
 
-.team-item{
+.row .team-item {
   background: #f4f5f6;
   text-align: center;
   margin: 20px;
@@ -113,12 +115,12 @@ img{
   transition: all 0.25s ease-in-out;
 }
 
-.team-item:hover{
+.row .team-item:hover {
   background: #3956de;
   color: white;
 }
 
-.team-item h3{
+.row .team-item h3 {
   margin: 20px 0 1px 0 !important;
   color: #454545;
   font-size: 18px;
@@ -127,25 +129,25 @@ img{
   transition: all .25s ease-in-out;
 }
 
-.section-subtitle {
+.row .text-center .section-subtitle {
   white-space: pre-line;
 }
 
-.team-item:hover h3{
+.row .team-item:hover h3 {
   color: #ddd;
 }
 
-.team-info {
+.row .team-info {
   display: block;
   margin-bottom: 0;
 }
 
-.team-info p{
+.row .team-info p {
   color: #acacac;
   font-style: italic;
 }
 
-.team-info::after {
+.row .team-info::after {
   background: linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
   display: inline-block;
   vertical-align: middle;
@@ -154,47 +156,38 @@ img{
   height: 3px;
 }
 
-.team-img {
+.row .team-item .team-img {
   max-width: 60px;
   padding: 8px;
   background-color: #dedede;
   border-radius: 50%;
 }
 
-/* Set default styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-}
-
 /* Style the sections */
-section {
+.hero-container section {
   margin-bottom: 50px;
-  padding: 20px;
+  padding: 20px 2rem;
   background-color: #f5f5f5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-section h2 {
+.hero-container section h2 {
   font-size: 2em;
   margin-bottom: 20px;
   text-align: center;
   color: #333;
 }
 
-section p {
+.hero-container section p {
   margin-bottom: 20px;
+  max-width: 50rem;
 }
 
 /* Style the list */
-ul {
+.hero-container ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -202,34 +195,36 @@ ul {
   margin-bottom: 20px;
 }
 
-li {
+.hero-container li {
   text-align: center;
+  margin-right: 2rem;
 }
 
-li h3 {
+.hero-container li h3 {
   font-size: 2em;
   margin-bottom: 10px;
   color: #0077be;
 }
 
-li p {
+.hero-container li p {
   margin-bottom: 10px;
 }
 
 /* Style the map container */
-section > div {
+.hero-container section>div {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
 
-section > div p {
+.hero-container section>div p {
   font-size: 0.8em;
   color: #999;
 }
 
-section > div button {
+.hero-container section>div button {
   padding: 10px;
   border: none;
   background-color: #0077be;
@@ -239,12 +234,12 @@ section > div button {
   transition: background-color 0.3s;
 }
 
-section > div button:hover {
+.hero-container section>div button:hover {
   background-color: #004e80;
 }
 
 /* Style the "Learn more" button */
-section a {
+.hero-container section a {
   display: block;
   width: 100%;
   max-width: 200px;
@@ -260,13 +255,13 @@ section a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-section a:hover {
+.hero-container section a:hover {
   background-color: #0077be;
   color: #fff;
 }
 
 /* Style the "View map" and "See our sensors" buttons */
-section button {
+.hero-container section button {
   display: block;
   width: 100%;
   max-width: 200px;
@@ -281,29 +276,39 @@ section button {
   transition: background-color 0.3s;
 }
 
-section button:hover {
+.hero-container section button:hover {
   background-color: #004e80;
 }
 
 /* Style the story headings */
-section h3 {
+.hero-container section h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #0077be;
 }
 
 /* Style the story paragraphs */
-section p + h3 + p {
+.hero-container section p+h3+p {
   margin-top: 20px;
 }
 
 /* Style the buttons in the story section */
-section:last-of-type button {
+.hero-container section:last-of-type button {
   margin-top: 20px;
 }
 
-input[type="text"],
-input[type="email"] {
+/* form section */
+.hero-container section form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container input[type="text"],
+.hero-container input[type="email"] {
+  width: 60%;
   font-size: 18px;
   padding: 10px;
   margin-bottom: 20px;
@@ -312,7 +317,7 @@ input[type="email"] {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-input[type="submit"] {
+.hero-container input[type="submit"] {
   font-size: 18px;
   padding: 10px;
   background-color: #00b894;
@@ -324,15 +329,16 @@ input[type="submit"] {
   transition: all 0.3s ease-in-out;
 }
 
-input[type="submit"]:hover {
+.hero-container input[type="submit"]:hover {
   background-color: #009e74;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-input[type="submit"]:focus {
+.hero-container input[type="submit"]:focus {
   outline: none;
 }
-button.story {
+
+.hero-container button.story {
   border: none;
   color: #3498db;
   background: none;
@@ -346,23 +352,24 @@ button.story {
   margin-top: 20px;
 }
 
-.story:hover {
+.hero-container .story:hover {
   background-color: #48e7ea;
 }
-.map-container {
+
+.hero-container .map-container {
   position: relative;
   width: 100%;
   height: 480px;
 }
 
-.map-buttons {
+.hero-container .map-buttons {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.map-button {
+.hero-container .map-button {
   margin: 0 10px;
   padding: 10px 20px;
   border: none;
@@ -372,6 +379,6 @@ button.story {
   cursor: pointer;
 }
 
-.map-button:hover {
+.hero-container .map-button:hover {
   background-color: #3e8e41;
 }
