@@ -1,0 +1,253 @@
+.about-us-container {
+    width: 100vw;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(210 230 221), white, rgb(169, 169, 243), white);
+}
+
+.about-us-container .about-us {
+    width: 70rem;
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    font-family: calibri;
+}
+
+.about-us-container .about-us .heading h6 {
+    color: #9a9a9a;
+    font-weight: bold;
+}
+
+.about-us-container .about-us .heading h2 {
+    width: 900px;
+    font-weight: 600;
+}
+
+.about-us-container .about-us #hands {
+    width: 100%;
+    height: 35rem;
+    border: 3px solid #9b9b9b;
+}
+
+.about-us-container .about-us .projects-container {
+    width: 100vw;
+    min-width: max-content;
+    background-color: #67e0c71c;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-container .about-us .projects {
+    width: 70rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .projects .left-section */
+.about-us-container .about-us .projects .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.about-us-container .about-us .projects .left-section h1 {
+    width: 500px;
+    font-size: 50px;
+}
+
+.about-us-container .about-us .projects .left-section p {
+    width: 750px;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+/* .projects .right-section */
+.about-us-container .about-us .projects .right-section {
+    width: 30%;
+    height: 23rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    border: 1px solid #7b9400;
+}
+
+.about-us-container .about-us .projects .right-section div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #7b9400
+}
+
+.about-us-container .about-us .projects .right-section .states {
+    border: none;
+}
+
+.about-us-container .about-us .projects .right-section strong {
+    font-size: 37px;
+}
+
+.about-us-container .about-us .projects .right-section span {
+    font-size: 15px;
+    color: #005e00;
+}
+
+/* donation details proof */
+.about-us-container .about-us .donate-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-container .about-us .donate-details #heading {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.about-us-container .about-us .donate-details #detail {
+    font-size: 18px;
+    width: 500px;
+}
+
+.about-us-container .about-us .donate-details .details-container {
+    width: 100vw;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    background-color: rgb(213 167 231 / 28%);
+}
+
+.about-us-container .about-us .donate-details .details-container .details {
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-us-container .about-us .donate-details .details-container .details div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.about-us-container .about-us .donate-details .details-container .details div .mini-heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-us-container .about-us .donate-details .details-container .details div .mini-detail {
+    font-size: 17px;
+}
+
+.about-us-container .about-us .donate-details .details-container .details div a {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* team leader */
+.about-us-container .about-us .team-leader {
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.about-us-container .about-us .team-leader h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.about-us-container .about-us .team-leader p {
+    font-size: 23px;
+    width: 900px;
+    font-weight: 300;
+}
+
+.about-us-container .about-us .team-leader .founder-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-container .about-us .team-leader .founder-details img {
+    width: 30rem;
+    border: 3px solid #00850057;
+}
+
+.about-us-container .about-us .team-leader .founder-details .description {
+    width: 50%;
+    text-align: left;
+}
+
+.about-us-container .about-us .team-leader .founder-details .description .head {
+    color: #4a4a4a;
+}
+
+.about-us-container .about-us .team-leader .founder-details .description .name {
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about-us-container .about-us .team-leader .founder-details .description .details {
+    font-size: 19px;
+}
+
+/* join with us */
+.about-us-container .about-us .join-us-container {
+    width: 100vw;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(251 255 180 / 31%);
+    padding: 3rem 0;
+}
+
+.about-us-container .about-us .join-us-container .join-us {
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-container .about-us .join-us-container .join-us img {
+    width: 550px;
+}
+
+.about-us-container .about-us .join-us-container .join-us .join p {
+    font-size: 48px;
+    font-family: 'Raleway';
+}
+
+.about-us-container .about-us .join-us-container .join-us .join button {
+    font-size: 30px;
+    font-weight: bold;
+}
