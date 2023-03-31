@@ -10,6 +10,7 @@
 .donate-container .image{
     box-sizing: border-box;
     width: 100vw;
+    min-width: max-content;
     height: 58.3rem;
     background-image: url('../../images/boy-finding-water.jpg');
     background-repeat: no-repeat;
