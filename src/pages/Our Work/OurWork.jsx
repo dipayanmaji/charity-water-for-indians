@@ -12,7 +12,7 @@ const OurWork = () => {
                 title="OUR MISSION"
                 text="Drop by Drop: Working Towards a World Where Fresh Water is a Right, Not a Privilege."
                 btnText="Join Us"
-                url="/"
+                url="/donate"
                 btnClass="show"
             />
         </>
