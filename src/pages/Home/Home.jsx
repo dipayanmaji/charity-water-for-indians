@@ -1,5 +1,5 @@
 import './Home.css';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PaymentMethod from '../../components/Payment Method/PaymentMethod';
 import PayAmount from '../../components/Pay Amount/PayAmount';
@@ -28,11 +28,11 @@ const Home = () => {
                     <source src={Bgvideo} type="video/mp4" />
                 </video>
             </div>
-            
+
             <div className="main-container">
                 <div className="containerItems">
                     <div className='left-side'>
-                        <h1>Help bring clean and safe water to every person on the planet.</h1> 
+                        <h1>Help bring clean and safe water to every person on the planet.</h1>
                         <p>
                             The water crisis is massive. But together, we can solve it.
                             Private donors cover our operating costs so whether you choose to
@@ -43,7 +43,7 @@ const Home = () => {
                     <div className='right-side'>
                         {
                             activePayAmount ? <PayAmount setActivePayAmount={setActivePayAmount} setAmount={setAmount} /> :
-                            <PaymentMethod setActivePayAmount={setActivePayAmount} amount={amount} />
+                                <PaymentMethod setActivePayAmount={setActivePayAmount} amount={amount} />
                         }
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const Home = () => {
             <div className='main-heading'>
                 {/* heading */}
                 <div className='heading' >
-                    <div className='our-work' style={{color:'blue'}}>OUR WORK</div>
+                    <Link to={'/our-work'}><div className='our-work' style={{ color: 'blue' }}>OUR WORK</div></Link>
 
                     <div className='main-heading1'>
                         <h1 >771 million people lack basic access to clean and safe drinking water.
@@ -79,12 +79,12 @@ const Home = () => {
 
                         <div className="column">
                             <img className='block mx-auto' width="170px" height="150px" src={Earth} alt="States" />
-                            <h3>12</h3>
+                            <h3>15</h3>
                             <p>States</p>
                         </div>
                     </div>
                 </div>
-                
+
                 {/* home-heading */}
                 <div className='home-heading'>
                     <div className="heading-main">
@@ -124,7 +124,7 @@ const Home = () => {
                         <div className='fund-column'>
                             <h4 >Fundraise for clean water</h4>
                             <p >Creating a campaign helps raise money for clean water projects for people in need.</p>
-                            <Link to={'/donate'} className='fund-btn1'>STRAT A CAMPAIGN</Link>
+                            <Link to={'/donate'} className='fund-btn1'>START A CAMPAIGN</Link>
                         </div>
                     </div>
                     <div className='home-heading1'>
@@ -150,7 +150,7 @@ const Home = () => {
                             <h6>STORIES FROM THE FIELD</h6>
                             <h4 >Uncommon Courage: When Water becomes a Warzone</h4>
                             <p>In unthinkable circumstances, mechanics in Ethiopia continue to restore access to clean water.</p>
-                            <Link className='fund-btn' to={'/our-work'}>SREAD MORE</Link>
+                            <Link className='fund-btn' to={'/our-work'}>READ MORE</Link>
                         </div>
                     </div>
                     <div className='home-heading2'>
