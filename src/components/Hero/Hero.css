@@ -1,0 +1,377 @@
+.hero{
+  width:100%;
+  height:70vh;
+  position:relative;
+}
+
+img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #1abc9c, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.hero-text p{
+  font-size: 2.2rem;
+  padding: 0.5rem 0 2rem 0;
+  color: #42d78a;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  }
+  
+  .hero-text .show{
+  text-decoration:none;
+  background: rgb(52, 210, 197);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size:1.1rem;
+  font-weight:bold;
+  letter-spacing: 2px;
+  color:#222;
+  }
+
+.hero-text .show {
+  text-decoration: none;
+  background: linear-gradient(to right, #3498db, #1abc9c);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+
+@media screen and(max-width:555px){
+  .hero-text h1{
+    padding: 10px 20px;
+  }
+  .hero-text p{
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+  .hero-text .show{
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-size:1rem;
+  }
+}
+
+.section-white {
+  background: #fff;
+  padding: 70px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col-md-12.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.col-sm-6 {
+  flex: 1 0 50%;
+  max-width: 50%;
+}
+
+.col-md-4 {
+  flex: 1 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.team-item{
+  background: #f4f5f6;
+  text-align: center;
+  margin: 20px;
+  padding: 50px 20px 40px 20px;
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+}
+
+.team-item:hover{
+  background: #3956de;
+  color: white;
+}
+
+.team-item h3{
+  margin: 20px 0 1px 0 !important;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .25s ease-in-out;
+}
+
+.section-subtitle {
+  white-space: pre-line;
+}
+
+.team-item:hover h3{
+  color: #ddd;
+}
+
+.team-info {
+  display: block;
+  margin-bottom: 0;
+}
+
+.team-info p{
+  color: #acacac;
+  font-style: italic;
+}
+
+.team-info::after {
+  background: linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 50px;
+  height: 3px;
+}
+
+.team-img {
+  max-width: 60px;
+  padding: 8px;
+  background-color: #dedede;
+  border-radius: 50%;
+}
+
+/* Set default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Style the sections */
+section {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+/* Style the list */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li {
+  text-align: center;
+}
+
+li h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #0077be;
+}
+
+li p {
+  margin-bottom: 10px;
+}
+
+/* Style the map container */
+section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+section > div p {
+  font-size: 0.8em;
+  color: #999;
+}
+
+section > div button {
+  padding: 10px;
+  border: none;
+  background-color: #0077be;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section > div button:hover {
+  background-color: #004e80;
+}
+
+/* Style the "Learn more" button */
+section a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #0077be;
+  border-radius: 5px;
+  text-align: center;
+  color: #0077be;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section a:hover {
+  background-color: #0077be;
+  color: #fff;
+}
+
+/* Style the "View map" and "See our sensors" buttons */
+section button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  background-color: #0077be;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section button:hover {
+  background-color: #004e80;
+}
+
+/* Style the story headings */
+section h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #0077be;
+}
+
+/* Style the story paragraphs */
+section p + h3 + p {
+  margin-top: 20px;
+}
+
+/* Style the buttons in the story section */
+section:last-of-type button {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+input[type="submit"] {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #00b894;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #009e74;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+button.story {
+  border: none;
+  color: #3498db;
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.story:hover {
+  background-color: #48e7ea;
+}
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+
+.map-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #45edc3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.map-button:hover {
+  background-color: #3e8e41;
+}
