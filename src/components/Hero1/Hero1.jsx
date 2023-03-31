@@ -1,9 +1,10 @@
 import "./Hero1.css"
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero1 = (props) => {
   return (
-    <>
+    <div className="hero1-container">
       <div className={props.cName}>
         <img alt="mainImg" src="https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000" />
       </div>
@@ -19,7 +20,7 @@ const Hero1 = (props) => {
           <h1>771 Million People Lack Access to Clean Water</h1>
           <p>
             That’s nearly 1 in 10 people worldwide. Or, twice the population of
-            the United States. The majority live in isolated rural areas and
+            the India. The majority live in isolated rural areas and
             spend hours every day walking to collect water for their family. Not
             only does walking for water keep children out of school or take up
             time that parents could be using to earn money, but the water often
@@ -101,13 +102,13 @@ const Hero1 = (props) => {
         </div>
       </div>
       <div className="water-investment">
-        <p className="water-investment-paragraph">Every <span>$1</span> invested in joint water supply and sanitation provides a $4.30 economic return.6</p>
+        <p className="water-investment-paragraph">Every <span>₹100</span> invested in joint water supply and sanitation provides a ₹450 economic return.</p>
         <p className="water-investment-paragraph">It’s a solid investment; access to clean water is perhaps the single most powerful tool for sparking economic growth that humanity has ever known.</p>
-        <button className="donate-button">DONATE NOW</button>
+        <Link to={'/donate'}><button className="donate-button">DONATE NOW</button></Link>
         <div className="impact-inbox">
           <p>Add Impact To Your Inbox</p>
           <p>Get our emails to stay in the know.</p>
-          <form>
+          <form onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="first-name">FIRST NAME</label>
             <input type="text" id="first-name" name="first-name" />
             <br />
@@ -117,11 +118,11 @@ const Hero1 = (props) => {
             <label htmlFor="email">EMAIL</label>
             <input type="email" id="email" name="email" />
             <br />
-            <button type="submit" className="subscribe-button">SUBSCRIBE</button>
+            <Link to={'/register'}><button type="submit" className="subscribe-button">SUBSCRIBE</button></Link>
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
