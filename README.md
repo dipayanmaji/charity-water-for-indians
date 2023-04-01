@@ -1,4 +1,12 @@
 <h1>Problem Statement</h1>
+<ul>
+    <li>Access to safe and clean drinking water is a fundamental human right, yet millions of people around the world lack access to it.</li>
+    <li>Non-governmental organizations (NGOs) working towards providing clean water to communities face a number of challenges in maintaining their websites.</li>
+    <li>This includes keeping their website content up-to-date, highlighting their projects and impact, and ensuring their website is secure from cyber threats.</li>
+    <li>For an NGO working towards providing pure water, it is crucial to have a well-maintained and informative website.</li>
+    <li>The website needs to showcase the organization's work, provide information about the communities it serves, and offer opportunities for donations and volunteerism.</li>
+    <li>Additionally, the website must be updated regularly to reflect the latest developments and achievements of the NGO's pure water projects.</li>
+</ul>
 
 <h1>Introduction</h1>
 <ul>
