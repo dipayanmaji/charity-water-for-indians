@@ -135,3 +135,10 @@
     <li>React JS</li>
     <li>Bootstrap</li>
 </ul>
+
+<h1>Created by</h1>
+<ul>
+    <li><a href='https://www.linkedin.com/in/dipayanmaji/' target='_blank'><strong>Dipayan Maji</strong></a></li>
+    <li><a href='https://www.linkedin.com/in/akash-nath-164085170/' target='_blank'><strong>Akash Nath</strong></a></li>
+    <li><a href='https://www.linkedin.com/in/archana-gajul-9405801aa/' target='_blank'><strong>Archana Gajul</strong></a></li>
+</ul>
