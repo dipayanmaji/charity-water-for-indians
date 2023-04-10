@@ -1,3 +1,6 @@
+<h1>Hosted Link</h1>
+<a href='https://charity-water-for-indians.vercel.app/' target='_blank'><strong>CHARITY WATER FOR INDIANS</strong></a>
+
 <h1>Problem Statement</h1>
 <ul>
     <li>Access to safe and clean drinking water is a fundamental human right, yet millions of people around the world lack access to it.</li>
@@ -132,6 +135,3 @@
     <li>React JS</li>
     <li>Bootstrap</li>
 </ul>
-
-<h1>Hosted Link</h1>
-<a href='https://charity-water-for-indians.vercel.app/' target='_blank'><strong>CHARITY WATER FOR INDIANS</strong></a>
