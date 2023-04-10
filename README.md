@@ -136,7 +136,7 @@
     <li>Bootstrap</li>
 </ul>
 
-<h1>Created by</h1>
+<h1>Created By</h1>
 <ul>
     <li><a href='https://www.linkedin.com/in/dipayanmaji/' target='_blank'><strong>Dipayan Maji</strong></a></li>
     <li><a href='https://www.linkedin.com/in/akash-nath-164085170/' target='_blank'><strong>Akash Nath</strong></a></li>
