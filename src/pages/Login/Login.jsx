@@ -64,7 +64,7 @@ const Login =()=>{
                 <h1 className={`heading ${nonactive ? 'nonactive-heading' : ''}`}>Log In</h1>
                 <form onSubmit={formSubmit} className= {nonactive ? 'nonactive-form' : ''}>
                     {newAccount && <RedHeading>You are not register yet. <Link to={'/register'}>Register here</Link></RedHeading>}
-                    {worngPassword && <RedHeading>Wroung password. Try again.</RedHeading>}
+                    {worngPassword && <RedHeading>Wrong password. Try again.</RedHeading>}
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label">Email</label>
                         <input onChange={inputHandler} value={state.email} autoComplete='off' type="email" className="form-control" id="email" placeholder='Email' required />
