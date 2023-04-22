@@ -1,4 +1,4 @@
-const eventDate = new Date('2023/4/7');
+const eventDate = new Date('2024/4/7');
 
 export const getTimeRemaining= ()=>{
     const total = eventDate - new Date();
