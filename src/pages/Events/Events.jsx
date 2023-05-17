@@ -121,7 +121,7 @@ const Events= ()=>{
             <div className={`upcoming-event ${nonactive ? 'nonactive-upcoming-events' : ''}`}>
                 <section className='upcoming-heading'>
                     <h2>HEALTH:WATER</h2>
-                    <span>on 7th April, 2023</span>
+                    <span>on 7th April, 2024</span>
                 </section>
                 <p>on the occasion of World Health Day</p>
                 <div className='images'>
